@@ -1,8 +1,75 @@
-@font-face {
-    font-family: Roboto;
-    src:();
+body {
+    background-color: #EDEDED;
 }
 
-.hero {
+h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+}
 
+h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-size: 48px;
+}
+
+h5{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container-fluid {
+    padding-inline: 5%;
+}
+
+.cooking-images {
+    width: 376px;
+    height: 347px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cooking-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .1s;
+    border-radius: 10px;
+}
+
+.cooking-images:hover img{
+    transform: scale(1.1);
+}
+
+.arrival-images {
+    width: 805px;
+    height: 632px;
+    object-fit: cover;
+}
+
+.nav-link {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 24px
+}
+.hero-textbox{
+    background-color: #181818CC;
+    font-weight: 400;
+    width: 545px;
+    position: relative;
+    bottom: 420px;
 }
