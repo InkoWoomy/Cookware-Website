@@ -14,35 +14,38 @@
 
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg py-4">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-none d-lg-block">
-              <img src="./assets/Logo.svg" alt="Logo" style="height: 79px;">
-            </div>
-            <ul class="navbar-nav container d-flex justify-content-center">
-              <li class="nav-item px-2 text-center">
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      
+      <div class="container-fluid">
+        <img src="./assets/Logo.svg" alt="logo" style="height: 79px" class="d-inline col-0 d-flex justify-content-end">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 d-flex justify-content-center">
+              <li class="nav-item">
                 <a class="nav-link" href="#">COOKWARE</a>
               </li>
-              <li class="nav-item px-2 text-center">
+              <li class="nav-item">
                 <a class="nav-link" href="#">BAKEWARE</a>
               </li>
-              <li class="nav-item px-2 text-center">
+              <li class="nav-item">
                 <a class="nav-link" href="#">ACCESSORIES</a>
               </li>
-              <li class="nav-item px-2 text-center">
-                <a class="nav-link" href="#">SALE</a>
+              <li class="nav-item" href="#">
+                <a class="nav-link nav-active">SALE</a>
               </li>
             </ul>
           </div>
-          <div class="d-block d-lg-none">
-            <img src="./assets/Logo.svg" alt="Logo" style=" height: 79px;">
-          </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+   
       <!--Navbar notes: Needs to be more aligned to the left-->
 
      
@@ -62,8 +65,8 @@
 
       <!--Hero Text-->
       <div class="container-fluid">
-        <div>
-          <h4 class="tagline-textbox py-5 text-center"  style="color: #FFFFFF">Cookware Built to Last</h4>
+        <div class="d-flex">
+          <h4 class="tagline-textbox text-center" style="color: #FFFFFF">Cookware Built to Last</h4>
         </div>
       </div>
 
@@ -137,36 +140,36 @@
         <h1 class="py-4">Best Sellers</h1>
       </div>
         <div class="container-fluid">
-          <div class="row">
-            <div class="col sellers-columns">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg col-12 sellers-columns">
               <div class="sellers-image">
                 <img src="./assets/BestSeller1.jpg" alt="Stock Pot">
               </div>
               <h2 class="pt-3">Stock Pot</h2>
               <p>Our fall bakeware is back again with warm fall colors.Check out our fall line of bakeware from fall colored pots to baking pans.</p>
               <div class="mt-auto">
-                <button type="button" class="btn btn-outline-dark px-5 ">SHOP NOW</button>
+                <button type="button" class="btn btn-outline-dark px-5">SHOP NOW</button>
               </div>
 
             </div>
-            <div class="col sellers-columns">
+            <div class="col-lg col-12 sellers-columns">
               <div class="sellers-image">
                 <img src="./assets/BestSeller2.jpg" alt="Stock Pot">
               </div>
               <h2 class="pt-3">Stock Pot</h2>
               <p>The Stock Pot is a cookware that is revolutionizing the way you cook! With its innovative design and advanced materials. The Stock Pot is the perfect choice for any kitchen. Its unique combination of ceramic and aluminum ensures that your food cooks evenly and quickly, while its non-stick coating ensures that nothing sticks to the surface. Whether you’re cooking for one or the whole family, the Stock Pot is the perfect choice!</p>
               <div class="mt-auto">
-                <button type="button" class="btn btn-outline-dark px-5 ">SHOP NOW</button>
+                <button type="button" class="btn btn-outline-dark px-5">SHOP NOW</button>
               </div>
             </div>
-            <div class="col sellers-columns">
+            <div class="col-lg col-12 sellers-columns">
               <div class="sellers-image">
                 <img src="./assets/BestSeller3.jpg" alt="Sauce Pan">
               </div>
               <h2 class="pt-3">Sauce Pan</h2>
               <p>The Sauce Pan is the perfect cookware for making a variety of sauces, stews, soups, and more. Its stainless steel construction ensures even heat distribution for better and faster cooking. No matter what you're cooking, you can count on the Sauce Pan to help you cook like a pro.</p>
               <div class="mt-auto">
-                <button type="button" class="btn btn-outline-dark px-5 ">SHOP NOW</button>
+                <button type="button" class="btn btn-outline-dark px-5">SHOP NOW</button>
               </div>
             </div>
           </div>
@@ -181,19 +184,34 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div class="col">
+            <div class="col-lg col-12">
               <div class="review-image">
                 <img src="./assets/Reviews1.jpg" alt="WokStarImg">
+                <div class="review-hero p-5 m-5 rounded">
+                  <h3>Wok Star!</h3>
+                  <p class="text-start">I love cooking using the cast iron wok for everyday family meals. With the wok it makes the food I make turn into restaurant quality meals. I bought this wok for my parents and also siblings!</p>
+                  <h2>David Jones</h2>
+                </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col-lg col-12">
               <div class="review-image">
                 <img src="./assets/Reviews2.jpg" alt="BuiltLastingImg">
+                <div class="review-hero p-5 m-5 rounded">
+                  <h3>Built To Last</h3>
+                  <p class="text-start">Bought the cast iron pot and it lasted longer than the other brands I bought. Not only are the pots durable but the colors of the pots are so nice!</p>
+                  <h2>Danielle Johnson</h2>
+                </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col-lg col-12 ">
               <div class="review-image">
                 <img src="./assets/Reviews3.jpg" alt="BestCookwareImg">
+                <div class="review-hero p-5 m-5 rounded">
+                  <h3>Best Cookware!</h3>
+                  <p class="text-start">I love all the cookware. I just bought my 4th pan and love it so much! I love the color of the pot and how durable the pots are. I’ve recommended the cast iron pot to all my friends and family.</p>
+                  <h2>Michelle</h2>
+                </div>
               </div>
             </div>
           </div>
@@ -205,21 +223,21 @@
       <div class="footer-grid footer-text">
         <div class="container-fluid my-5">
           <div class="row">
-            <div class="col">
+            <div class="col-lg col-6 pb-2 pb-lg-0">
               <h5><b>ABOUT OUR HOME</b></h5>
               <p>ABOUT US</p>
               <p>CAREERS</p>
               <p>PRIVACY</p>
               <p>MEDIA RELATIONS</p>
             </div>
-            <div class="col">
+            <div class="col-lg col-6 pb-2 pb-lg-0">
               <h5><b>PRODUCTS</b></h5>
               <p>COOKWARE</p>
               <p>BAKEWARE</p>
               <p>BEST SELLERS</p>
               <p>ACCESSORIES</p>
             </div>
-            <div class="col">
+            <div class="col-lg col-6 pb-2 pb-lg-0">
               <h5><b>CUSTOMER SERVICE</b></h5>
               <p>CONTACT US</p>
               <p>ORDER STATUS</p>
@@ -228,7 +246,7 @@
             </div>
             <div class="col-4">
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 order-lg-5 order-first pb-2 pb-lg-0">
               <p>Subscribe to our newsletter to be the first to know about new products and special events.</p>
               <form class="row g-3">
                 <div class="col-8">
